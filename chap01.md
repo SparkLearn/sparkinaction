@@ -97,7 +97,23 @@
     至此，Spark环境变量配置完成
 ## 4. 编写代码
 ### 4.1 编写Scala
-#### 4.1.1 安装Scala插件
+#### 4.1.1 新建第一个maven项目
+    打开Intellij，选择【Create New Project】，如下图所示(第一次New Project时将打开此界面，之后【File】-【New】-【Project】-【Maven】即可新建maven项目)
+<img src="./img/chap01/firstproject.png"/><br>
+
+    选择【Maven】-【Project SDK】-【New】，选择Java的安装路径，如下图所示
+<img src="./img/chap01/newmaven.png"/><br>
+<img src="./img/chap01/selectsdk.png"/><br>
+    
+    选择【OK】-【Next】
+    GroupId为组织名称
+    ArtifactId为jar包名称(之后打jar包时将用到)
+    下图为示例
+<img src="./img/chap01/groupid.png"/><br>
+
+    选择【Next】，Project为项目名称，下图为示例，选择【Finish】
+<img src="./img/chap01/project.png"/><br>
+#### 4.1.2 安装Scala插件
     打开Intellij，选择【File】-【Settings】-【Plugins】，输入Scala，如下图所示
 
 <img src="./img/chap01/scalaplugins.png"/><br>
@@ -107,16 +123,7 @@
 <img src="./img/chap01/scala.png"/><br>
 
     至此，Scala插件安装完成
-#### 4.1.2 编写Scala前准备
-    打开Intellij，选择【File】-【New】-【Project】-【Maven】-【Next】
-    GroupId为组织名称
-    ArtifactId为jar包名称(之后打jar包时将用到)
-    下图为示例
-<img src="./img/chap01/groupid.png"/><br>
-
-    选择【Next】，Project为项目名称，下图为示例，选择【Finish】
-<img src="./img/chap01/project.png"/><br>
-
+#### 4.1.3 编写Scala前准备
     选择【File】-【Project Structure】-【Global Libraries】-【+】-【Scala SDK】-【Browse】
     选择Scala工具中的lib目录，如下图所示
 <img src="./img/chap01/scalasdk.png"/><br>
@@ -135,7 +142,7 @@
     选择【src】-【main】-右键【scala】-【Mark Directory as】-【Sources Root】
     如下图所示
 <img src="./img/chap01/sourcesroot.png"/><br>
-#### 4.1.3 编写第一个Scala(example)
+#### 4.1.4 编写第一个Scala(example)
     在当前项目中，选择【src】-【main】-右键【scala】-【New】-【Scala Class】-下拉选择【Object】
     输入类名FirstScala，如下图所示
 <img src="./img/chap01/firstscala.png"/><br>
@@ -143,7 +150,7 @@
     在当前类中输入测试代码，右键【Run 'FirstScala'】，即可运行Scala
     如下图所示
 <img src="./img/chap01/runscala.png"/><br>
-#### 4.1.4 编写第一个Spark(example)
+#### 4.1.5 编写第一个Spark(example)
     选择【File】-【Project Structure】-【Libraries】-【+】-【Java】
     选择Spark工具中的jars目录，如下图所示
     【OK】-【Apply】
