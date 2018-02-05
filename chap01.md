@@ -42,14 +42,14 @@
 </div>
 
     以上工具建议解压到同一个目录下；本次安装过程皆以D:/spark为例，如下图所示
-<img src="img/chap01/src.png"/><br>
+<img src="./img/chap01/src.png"/><br>
 ## 2. 工具安装
 ### 2.1. Intellij安装
     双击ideaIC-2016.2.3.exe，点击Next，如下图所示
-<img src="img/chap01/intellij.png"/><br>
+<img src="./img/chap01/intellij.png"/><br>
 
     建议在这一步将安装路径修改，可选择一个剩余空间较多的盘，以下图为例
-<img src="img/chap01/intellij2.png"/><br>
+<img src="./img/chap01/intellij2.png"/><br>
 
     之后逐一点击Next即可，完成Intellij的安装
 ### 2.2. Java安装
@@ -60,33 +60,33 @@
 ## 3. 配置环境变量
 ### 3.1. Java环境变量配置
     打开【计算机】，选择【系统属性】，如下图所示
-<img src="img/chap01/system property.png"/><br>    
+<img src="./img/chap01/system property.png"/><br>    
 
     之后依次选择【高级系统设置】-【环境变量】-【xx的用户变量】，
     选择【新建】，新建用户变量JAVA_HOME，变量名为JAVA_HOME，变量值为Java的安装路径，如下图所示
-<img src="img/chap01/javahome.png"/><br> 
+<img src="./img/chap01/javahome.png"/><br> 
 
     选择【新建】，新建用户变量CLASSPATH，变量名为CLASSPATH
     变量值如下（copy即可）
     .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
     如下图所示
-<img src="img/chap01/classpath.png"/><br>
+<img src="./img/chap01/classpath.png"/><br>
 
     选择【新建】，新建用户变量PATH，变量名为PATH，
     变量值如下（copy即可）
     .;%JAVA_HOME%\bin
     如下图所示
-<img src="img/chap01/path.png"/><br>
+<img src="./img/chap01/path.png"/><br>
 
     至此，Java环境变量配置完成
 ### 3.2. Spark环境变量配置
     继续，选择【新建】，新建用户变量HADOOP_HOME，
     变量名为HADOOP_HOME，变量值为Hadoop工具保存的路径，如下图所示
-<img src="img/chap01/hadoophome.png"/><br>
+<img src="./img/chap01/hadoophome.png"/><br>
 
     选择【新建】，新建用户变量SPARK_HOME，
     变量名为SPARK_HOME，变量值为Spark工具保存的路径，如下图所示
-<img src="img/chap01/sparkhome.png"/><br>
+<img src="./img/chap01/sparkhome.png"/><br>
 
     在已经新建的用户变量中选择【Path】，选择【编辑】，
     将Spark工具中的bin目录添加进变量值中，注意不同的变量值之间用英文分号;进行分隔
@@ -100,11 +100,11 @@
 #### 4.1.1 安装Scala插件
     打开Intellij，选择【File】-【Settings】-【Plugins】，输入Scala，如下图所示
 
-<img src="img/chap01/scalaplugins.png"/><br>
+<img src="./img/chap01/scalaplugins.png"/><br>
     
     选择【Search in repositories】，找到Scala插件，选择【Install】，如下图所示
 
-<img src="img/chap01/scala.png"/><br>
+<img src="./img/chap01/scala.png"/><br>
 
     至此，Scala插件安装完成
 #### 4.1.2 编写Scala前准备
@@ -112,45 +112,45 @@
     GroupId为组织名称
     ArtifactId为jar包名称(之后打jar包时将用到)
     下图为示例
-<img src="img/chap01/groupid.png"/><br>
+<img src="./img/chap01/groupid.png"/><br>
 
     选择【Next】，Project为项目名称，下图为示例，选择【Finish】
-<img src="img/chap01/project.png"/><br>
+<img src="./img/chap01/project.png"/><br>
 
     选择【File】-【Project Structure】-【Global Libraries】-【+】-【Scala SDK】-【Browse】
     选择Scala工具中的lib目录，如下图所示
-<img src="img/chap01/scalasdk.png"/><br>
+<img src="./img/chap01/scalasdk.png"/><br>
 
     选择【Global Libraries】-右键【scala-sdk-2.11.8】-【Copy to Project Libraries】-【OK】-【Apply】
     如下图所示
-<img src="img/chap01/copysdk.png"/><br>
+<img src="./img/chap01/copysdk.png"/><br>
     
     至此，则将scala添加进当前项目，如下图所示
-<img src="img/chap01/scalaexternal.png"/><br>   
+<img src="./img/chap01/scalaexternal.png"/><br>   
 
     在当前项目中，选择【src】-右键【main】-【New】-【Directory】，输入scala
     如下图所示
-<img src="img/chap01/newscala.png"/><br>
+<img src="./img/chap01/newscala.png"/><br>
 
     选择【src】-【main】-右键【scala】-【Mark Directory as】-【Sources Root】
     如下图所示
-<img src="img/chap01/sourcesroot.png"/><br>
+<img src="./img/chap01/sourcesroot.png"/><br>
 #### 4.1.3 编写第一个Scala(example)
     在当前项目中，选择【src】-【main】-右键【scala】-【New】-【Scala Class】-下拉选择【Object】
     输入类名FirstScala，如下图所示
-<img src="img/chap01/firstscala.png"/><br>
+<img src="./img/chap01/firstscala.png"/><br>
     
     在当前类中输入测试代码，右键【Run 'FirstScala'】，即可运行Scala
     如下图所示
-<img src="img/chap01/runscala.png"/><br>
+<img src="./img/chap01/runscala.png"/><br>
 #### 4.1.4 编写第一个Spark(example)
     选择【File】-【Project Structure】-【Libraries】-【+】-【Java】
     选择Spark工具中的jars目录，如下图所示
     【OK】-【Apply】
-<img src="img/chap01/sparkjars.png"/><br>
+<img src="./img/chap01/sparkjars.png"/><br>
 
     在当前项目中，选择【src】-【main】-右键【scala】-【New】-【Scala Class】-下拉选择【Object】
     输入类名FirstSpark，
     在当前类中输入测试代码，右键【Run 'FirstScala'】，即可运行local模式下的Spark
     如下图所示
-<img src="img/chap01/runspark.png"/><br>    
+<img src="./img/chap01/runspark.png"/><br>    
